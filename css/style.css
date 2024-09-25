@@ -13,6 +13,13 @@ body {
   background-color: black;
 }
 
+.judul {
+  color: white;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+}
+
 .navbar li,
 a,
 button {
@@ -74,7 +81,7 @@ button:hover {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  margin-top: 100px;
+  margin-top: 35px;
 }
 .card {
   width: 325px;
