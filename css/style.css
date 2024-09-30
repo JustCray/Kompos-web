@@ -12,14 +12,23 @@ body {
   min-height: 100vh;
   background-color: black;
 }
-
+/* CSS Bagian Judul */
 .judul {
   color: white;
   text-align: center;
   font-family: "Roboto", sans-serif;
   font-size: 1rem;
 }
-
+/* CSS Bagian Navbar */
+.navbar {
+  display: block;
+  top: 0;
+  position: sticky;
+  background-color: black;
+  container-type: inline-size;
+  container-name: navbar;
+}
+/* Buat Font di Navbar */
 .navbar li,
 a,
 button {
@@ -29,7 +38,7 @@ button {
   color: #edf0f1;
   text-decoration: none;
 }
-
+/* Logo/Nama brand di bagian navbar */
 .brand {
   margin-right: auto;
   font-family: "Roboto", sans-serif;
@@ -39,14 +48,14 @@ button {
   text-decoration: none;
   cursor: pointer;
 }
-
+/* Keseluruhan Navbar */
 header {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  padding: 30px 5%;
+  padding: 30px 2%;
 }
-
+/* Isi dari navbar */
 .navlinks {
   list-style: none;
 }
@@ -76,7 +85,7 @@ button {
 button:hover {
   background-color: rgba(0, 136, 169, 0.7);
 }
-
+/* CSS dari bagian Card */
 .card-container {
   display: flex;
   justify-content: center;
@@ -96,7 +105,7 @@ button:hover {
   width: 100%;
   height: fit-content;
 }
-
+/* Isi dari Card */
 .card-content {
   padding: 18px;
 }
@@ -122,9 +131,32 @@ button:hover {
 .card-container .button:hover {
   background-color: rgba(51, 51, 51, 0.788);
 }
-
+/* CSS bagian About */
 .about {
   margin-top: 50px;
   font-family: "Poppins", sans-serif;
   color: white;
+}
+.about .about-judul {
+  text-align: center;
+}
+.about-content {
+  margin-bottom: 3vh;
+}
+.about-content p {
+  font-size: 1rem;
+}
+/* Container */
+@container navbar (max-width: 800px) {
+  .navbar {
+    display: none;
+  }
+  .navbar li,
+  a,
+  button {
+    display: none;
+  }
+  .navlinks li a {
+    display: none;
+  }
 }
